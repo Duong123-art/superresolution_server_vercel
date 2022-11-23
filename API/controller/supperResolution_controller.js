@@ -2,7 +2,7 @@ const database = require('./../database_connection.js');
 
 module.exports = {
   getLastedDomain: function (req, res) {
-    var sql = `SELECT * FROM superresolutiondatabase.ai_server`;
+    var sql = `SELECT * FROM b5hqaagqf1imkytnpszs.ngrok_domain`;
 
     database.query(sql, (err, result) => {
       if (err) {
@@ -17,7 +17,9 @@ module.exports = {
   updateLatestDomain: (req, res) => {
     const domain = req.body.domain;
 
-    var sql = `INSERT INTO superresolutiondatabase.ai_server(domain_name) VALUES(\"${domain}\")`;
+    console.log('Domain: ', domain);
+
+    var sql = `INSERT INTO b5hqaagqf1imkytnpszs.ngrok_domain(domain_name) VALUES(\"${domain}\")`;
 
     database.query(sql, (err, result) => {
       if (err) {

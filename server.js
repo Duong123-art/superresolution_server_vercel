@@ -32,3 +32,4 @@ if (connection) {
 } else {
   connection.release();
 }
+console.log('Hello');

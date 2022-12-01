@@ -2,12 +2,12 @@
   "name": "nodejsserver",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "index.js",
   "engines": {
     "node": "14.x"
   },
   "scripts": {
-    "start": "node server.js",
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -17,6 +17,7 @@
     "body-parser": "^1.20.1",
     "express": "^4.18.2",
     "mysql2": "^2.3.3",
-    "nodemon": "^2.0.20"
+    "nodemon": "^2.0.20",
+    "vercel": "^28.7.0"
   }
 }
